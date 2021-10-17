@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+  margin: 0;  
+}
+h2{
+    margin: 0;
+}
+body{
+ background-color: #ebebe9;   
+}
+.modal{
+z-index: 100000;    
+}
+.alert-der{
+    width: 30%;
+    position: absolute;
+    z-index: 100000;   
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+.alert-izq{
+    width: 30%;
+    position: absolute;
+    z-index: 100000;   
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+}
+/* VISTA DE USUARIO  */
+.usuario{
+width: 75%;   
+max-width: 75%;    
+height: auto;
+margin: 2% auto;
+font-family: 'Questrial', sans-serif;
+display: flex;
+justify-content: center;  
+}
+.usuario .carta{
+ width: 100%; 
+ max-width: 1040px;    
+ height: 660px;
+ max-height: 660px;
+ background-color: white; 
+ position: relative;
+}
+.usuario .carta .izq{
+ width: 50%;
+ height: 100%;
+ display: inline-block;
+ position: relative;
+ padding: 20px;
+ box-sizing: border-box;
+position: relative;
+}
+.usuario .carta .izq .cuadro{
+width: 100%;
+bottom: 0;
+right: 0;    
+position: absolute;   
+margin-bottom: 30px;    
+display: flex;
+justify-content: center;    
+}
+.usuario .carta .der{
+ width: 50%;
+ height: 100%;
+ display: inline-block;
+display: inline-block;
+float: right;
+position: relative;
+}
+.usuario .carta .der img{
+width: 100%;
+height: 100%;  
+position: absolute;   
+}
+.usuario .fondo{
+ width: 100%;
+ height: 100%;  
+ z-index: 100;
+ background-color: black;
+ position: absolute; 
+ display: inline-block;
+ opacity: 0.4;
+}
+.usuario  form{
+ width: 100%;
+ height: 100%;  
+ z-index: 1500;  
+ position: absolute; 
+ padding: 20px;
+ box-sizing: border-box;
+}
+/* FIN VISTA DE USUARIO  */
+
+
+
+/* VISTA DE SOCIO  */
+.socio{
+width: 65%;   
+max-width: 65%;    
+height: auto;
+margin: 2% auto;
+display: flex;
+justify-content: center;  
+}
+.socio .carta{
+ width: 100%;   
+ max-width: 950px;    
+ height: 520px;
+ max-height: 520px;
+ background-color: white; 
+ position: relative;
+}
+.socio .carta img{
+width: 100%;
+height: 100%;  
+position: absolute;
+}
+.socio .carta .fondo{
+width: 50%;
+height: 100%;
+position: absolute;
+z-index: 100;
+background-color: black;
+opacity: 0.5;  
+right: 0;   
+}
+.socio .carta form{
+ width: 50%;
+height: 100%;
+position: absolute;
+z-index: 1000;
+right: 0;
+padding: 20px;
+box-sizing: border-box; 
+font-family: 'Questrial', sans-serif !important;
+color:white;    
+}
+.socio .carta form .registrate{
+display: flex;
+flex-direction: column; 
+justify-content: space-around;
+align-items: center; 
+}
+.socio .carta form .registrate a{
+ color: white;   
+}
+/* FIN VISTA DE SOCIO  */
+
+/* RECUPERAR CONTRASENA */
+.recuperar{
+width: 45%;   
+max-width: 590px;    
+height: auto;
+margin: 2% auto;
+padding: 30px 40px;
+background-color: white;    
+}
+
+/* RECUPERAR CONTRASENA */

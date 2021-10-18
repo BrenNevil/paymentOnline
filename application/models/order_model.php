@@ -3,13 +3,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Order_model extends CI_Model {                
+    
+    
+    public function get_order_by_id($id){
 
-    public function get_all_(){
-
-     return $this->db->get("sellers")->result();    
-
+      $this->db->where("id_order", $id);
+      return $this->db->get("orders")->row();  
+      
+   
     }
-
+    
 
 }
 ?>

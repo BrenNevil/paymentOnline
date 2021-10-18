@@ -11,6 +11,7 @@ class Seller extends CI_Controller {
 
   public function index(){   
     $vars=[
+    "alert"       => $this->session->flashdata('alert'),
     "sellers"  => $this->seller_model->get_all_sellers(),
     ];
       

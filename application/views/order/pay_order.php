@@ -105,7 +105,7 @@
               $<input type="number" name="total" id="total" class="form-control" value="0">
               <br><br>
               <?php if ($order ->status == 0){?> 
-              <button type="submit" class="btn btn-crown">Guardar</button>
+              <button type="submit" class="btn btn-send">Guardar</button>
               <?php }else{ ?> <label for="product">Este pedido ya esta pagado</label> <?php } ?>
             </form>
             

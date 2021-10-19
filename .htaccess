@@ -1,0 +1,4 @@
+RewriteCond %{HTTP_HOST} ^payment-proyect.herokuapp.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.payment-proyect.herokuapp.com$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]

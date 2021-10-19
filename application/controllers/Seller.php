@@ -12,7 +12,7 @@ class Seller extends CI_Controller {
   public function index(){   
     $vars=[
     "alert"       => $this->session->flashdata('alert'),
-    "sellers"  => $this->seller_model->get_all_sellers(),
+    "sellers"  => $this->Seller_model->get_all_sellers(),
     ];
       
     $this->load->view('sellers/sellers', $vars);   
@@ -60,7 +60,7 @@ class Seller extends CI_Controller {
   public function commissions(){   
     $vars=[
     "alert"       => $this->session->flashdata('alert'),
-    "sellers"  => $this->seller_model->get_all_sellers(),
+    "sellers"  => $this->Seller_model->get_all_sellers(),
     ];
       //echo json_encode($vars); 
     $this->load->view('sellers/commissions', $vars);   

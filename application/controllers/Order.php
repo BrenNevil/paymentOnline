@@ -16,8 +16,8 @@ class Order extends CI_Controller {
 
     $vars+=[
     "alert"    => $this->session->flashdata('alert'),
-    "sellers"  => $this->seller_model->get_all_sellers(),
-    "products" => $this->product_model->get_all_products(),
+    "sellers"  => $this->Seller_model->get_all_sellers(),
+    "products" => $this->Product_model->get_all_products(),
 
     ];
       
@@ -36,8 +36,8 @@ class Order extends CI_Controller {
       
       $vars=[
         "alert"    => $this->session->flashdata('alert'),
-        "sellers"  => $this->seller_model->get_all_sellers(),
-        "products" => $this->product_model->get_all_products(),
+        "sellers"  => $this->Seller_model->get_all_sellers(),
+        "products" => $this->Product_model->get_all_products(),
     
         ];
             
@@ -103,8 +103,8 @@ class Order extends CI_Controller {
 
     $vars+=[
     "alert"    => $this->session->flashdata('alert'),
-    "order"    => $this->order_model->get_order_by_id($id),
-    "products" => $this->product_model->get_products_order($id),
+    "order"    => $this->Order_model->get_order_by_id($id),
+    "products" => $this->Product_model->get_products_order($id),
 
     ];
      //echo json_encode($vars); 
@@ -128,8 +128,8 @@ class Order extends CI_Controller {
       
       $vars=[
         "alert"    => $this->session->flashdata('alert'),
-        "order"    => $this->order_model->get_order_by_id($idOrder),
-        "products" => $this->product_model->get_products_order($idOrder),
+        "order"    => $this->Order_model->get_order_by_id($idOrder),
+        "products" => $this->Product_model->get_products_order($idOrder),
         
         ];
             
@@ -205,8 +205,8 @@ class Order extends CI_Controller {
 
     $vars+=[
     "alert"    => $this->session->flashdata('alert'),
-    "payment"  => $this->order_model->get_payment(),
-    "order"    => $this->order_model->get_order(),
+    "payment"  => $this->Order_model->get_payment(),
+    "order"    => $this->Order_model->get_order(),
     ];
      //echo json_encode($vars); 
     $this->load->view('order/bitacorapay', $vars);   

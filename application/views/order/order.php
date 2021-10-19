@@ -78,7 +78,7 @@
               <label for="seller">Total de Venta:</label>
               $<input type="number" name="price" id="price" class="form-control" value="0">
               <input type="hidden" name="base" id="base" value="<?php echo base_url();?>">
-              <button type="submit" class="btn btn-crown">Guardar</button>
+              <button type="submit" class="btn btn-crown">Pagar</button>
             </form>
             
           </div>

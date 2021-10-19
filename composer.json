@@ -19,5 +19,9 @@
 	"require-dev": {
 		"mikey179/vfsStream": "1.1.*",
 		"phpunit/phpunit": "4.* || 5.*"
-	}
+	},
+	"post-install-cmd": [
+		"php artisan clear-compiled",
+		"chmod -R 777 public/"
+	]
 }

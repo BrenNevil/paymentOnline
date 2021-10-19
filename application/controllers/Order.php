@@ -5,9 +5,9 @@ class Order extends CI_Controller {
 
   public function __construct() {
     parent::__construct();    
-    $this->load->model(['order_model']);          
-    $this->load->model(['seller_model']);          
-    $this->load->model(['product_model']);          
+    $this->load->model('order_model');          
+    $this->load->model('seller_model');          
+    $this->load->model('product_model');          
   }
 
 

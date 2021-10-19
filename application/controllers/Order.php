@@ -198,7 +198,27 @@ class Order extends CI_Controller {
 
       }  
               
-  }   
+  } 
+  
+  public function bitacora(){  
+    $vars=[];
+
+    $vars+=[
+    "alert"    => $this->session->flashdata('alert'),
+    "payment"  => $this->order_model->get_payment(),
+    "order"    => $this->order_model->get_order(),
+    ];
+     //echo json_encode($vars); 
+    $this->load->view('order/bitacorapay', $vars);   
+
+  }
+  public function get_payment_by_id($id){
+    $this->db->where("id_order", $id);
+    $query = $this->db->get("payments")->result(); 
+    echo json_encode($query); 
+  }
+
+
 }
 
 ?>

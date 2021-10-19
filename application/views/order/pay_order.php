@@ -12,7 +12,7 @@
 <br>
 <br> 
 
-<div class="container-fluid panel ">
+<div class="container-fluid prinicipal ">
   <div class="row">
     <div class="col-md-9 der-first">          
     
@@ -39,7 +39,7 @@
       <?php } ?>
       <!-- VALIDATION ERRORS -->
     
-      <div id="cupones" class="">    
+      <div id="title" class="">    
        <div class="row">
           <div class="col">
               <h4 class="center">Su pedido es el #<?php echo $order->id_order ?></h4>
@@ -51,7 +51,7 @@
      <!-- |||||||||||||||||||||||||||||||||||||| -->
       
  
-      <div id="cupones" class="">      
+      <div id="title" class="">      
         <div class="row">
           <div class="col">
             <label for="product">Productos en tu pedido:</label>
@@ -104,7 +104,9 @@
               <label for="total">Total a pagar:</label>
               $<input type="number" name="total" id="total" class="form-control" value="0">
               <br><br>
+              <?php if ($order ->status == 0){?> 
               <button type="submit" class="btn btn-crown">Guardar</button>
+              <?php }else{ ?> <label for="product">Este pedido ya esta pagado</label> <?php } ?>
             </form>
             
           </div>
@@ -113,11 +115,6 @@
     </div>
   </div>
   <br>
-
-  <!-- MODAL |||||||||||||||||||||||||||||||||||||| -->
- 
- 
-
 
 
 
@@ -137,13 +134,11 @@ function get_envio() {
   var total_pago = document.getElementById("subtotal").value;
   value = select.value, //El valor seleccionado
   text = select.options[select.selectedIndex].innerText; //El texto de la opción seleccionada
-  alert(text);
 
   const statesJal = ['Durango', 'Zacatecas', 'Aguascalientes','Guanajuato', 'San Luis Potosí', 'Michoacán', 'Colima', 'Jalisco' ];
  if(statesJal.includes(text)){ shipping = 100; }
  else{ shipping = 300; }
   total_pago =  parseInt(total_pago) +  parseInt(shipping);
-  alert(total_pago);
   $("#shipping").val(shipping);
   $("#total").val(total_pago);
 }

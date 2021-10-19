@@ -9,9 +9,19 @@ class Order_model extends CI_Model {
 
       $this->db->where("id_order", $id);
       return $this->db->get("orders")->row();  
-      
-   
     }
+
+    public function get_order(){
+
+      return $this->db->get("orders")->result();  
+    }
+
+    public function get_payment(){
+
+      return $this->db->get("payments")->result();  
+    }
+    
+
     
 
 }

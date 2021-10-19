@@ -13,7 +13,7 @@
 <br>
 <br> 
 
-<div class="container-fluid panel ">
+<div class="container-fluid principal ">
   <div class="row">
     <div class="col-md-9 der-first">          
     
@@ -41,7 +41,7 @@
       <?php } ?>
       <!-- VALIDATION ERRORS -->
     
-      <div id="cupones" class="">    
+      <div id="title" class="">    
        <div class="row">
           <div class="col">
               <h4 class="center">Ingresar pedido</h4>
@@ -53,7 +53,7 @@
      <!-- |||||||||||||||||||||||||||||||||||||| -->
       
  
-      <div id="cupones" class="">      
+      <div id="title" class="">      
         <div class="row">
           <div class="col">
             <label for="product">Productos:</label>
@@ -87,13 +87,6 @@
     </div>
   </div>
   <br>
-
-  <!-- MODAL |||||||||||||||||||||||||||||||||||||| -->
- 
- 
-
-
-
 
 </div>
 <br>

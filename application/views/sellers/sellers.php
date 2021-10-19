@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Panel</title>
+  <title></title>
   
 
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
@@ -16,11 +16,9 @@
 <br>
 <br> 
 
-<div class="container-fluid panel ">
+<div class="container-fluid principal ">
   <div class="row">
     <div class="col-md-9 der-first">          
-     <!-- DIRECCIONES |||||||||||||||||||||||||||||||||||||| -->
-    
 
     <!-- ALERT -->
      <?php if(isset($alert)){ ?>
@@ -44,7 +42,7 @@
    <?php } ?>
    <!-- VALIDATION ERRORS -->
     
-      <div id="cupones" class="">    
+      <div id="title" class="">    
        <div class="row">
           <div class="col">
               <h4 class="center">Vendedoras</h4>

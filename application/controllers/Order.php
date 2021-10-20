@@ -64,7 +64,8 @@ class Order extends CI_Controller {
               $array = explode(',', $product);
               
 
-              foreach ($array as &$valor) {
+              foreach ($array as $valor) {
+                
                 if($valor == "0" ){}else{
                 $data_produc=[
                   'id_order'    => $idOrder,

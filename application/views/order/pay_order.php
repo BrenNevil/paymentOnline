@@ -56,7 +56,8 @@
           <div class="col">
             <label for="product">Productos en tu pedido:</label>
               <?php foreach($products as $rowprod) {
-                if($rowprod->id_product !=0){?>                                                        
+                //if($rowprod->name !=0)
+                {?>                                                        
               <div><p><?php echo $rowprod->name ?>    $ <?php echo $rowprod->price ?></p></div>              
               <?php }} ?>
             <br>

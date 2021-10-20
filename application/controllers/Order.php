@@ -65,7 +65,7 @@ class Order extends CI_Controller {
               
 
               foreach ($array as &$valor) {
-                if($valor ==0){}else{
+                if($valor == "0"){}else{
                 $data_produc=[
                   'id_order'    => $idOrder,
                   'id_product'  => $valor,

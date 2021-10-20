@@ -56,9 +56,9 @@
           <div class="col">
             <label for="product">Productos en tu pedido:</label>
               <?php foreach($products as $rowprod) {
-                //if($rowprod->name !=0)
+                if($rowprod->id_product !=0)
                 {?>                                                        
-              <div><p><?php echo $rowprod->name ?>    $ <?php echo $rowprod->price ?></p></div>              
+              <div><p><?php echo $rowprod->name. $rowprod->id_product ?>    $ <?php echo $rowprod->price ?></p></div>              
               <?php }} ?>
             <br>
             <form action="../../order/post_payment" method="post">

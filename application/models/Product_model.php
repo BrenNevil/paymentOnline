@@ -20,15 +20,16 @@ class Product_model extends CI_Model {
         $this->db->where("id_order", $id);
 	    $query = $this->db->get()->result();
 	    foreach ($query as $row) {
-			
-		 $this->db->from("products");
-		 $this->db->where("id_product", $row->id_product); 
-		 $query_prod = $this->db->get();
-		 $row_prod = $query_prod->row();	 
-			
-	     $row->name  = $row_prod -> name;
-	     $row->price = $row_prod -> price;
-	 }
+				if($row->id_product>0){
+				$this->db->from("products");
+				$this->db->where("id_product", $row->id_product); 
+				$query_prod = $this->db->get();
+				$row_prod = $query_prod->row();	 
+					
+					$row->name  = $row_prod -> name;
+					$row->price = $row_prod -> price;
+				}
+			}
 	return $query;
      
     }
